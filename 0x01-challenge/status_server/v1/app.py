@@ -2,7 +2,9 @@
 """
 Web server 
 """
-from api.v1.views import app_views
+from api import v1
+from v1 import views
+from views import app_views
 from flask import Flask, jsonify, make_response
 
 app = Flask(__name__)
